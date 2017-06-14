@@ -20,6 +20,7 @@ android {
 }
 
 dependencies {
+
     compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
@@ -27,4 +28,10 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.3.1'
     testCompile 'junit:junit:4.12'
     compile 'com.jakewharton:butterknife:5.1.1'
+
+    /* View注解 ButterKnife */
+    compile 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    /*EventBus3.0*/
+    compile 'org.greenrobot:eventbus:3.0.0'
 }
