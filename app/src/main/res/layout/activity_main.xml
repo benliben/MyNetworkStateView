@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_margin="25dp"
+    tools:context="com.android.benben.mynetworkstateview.MainActivity">
+
+    <include layout="@layout/view_network_state" />
+
+    <Button
+        android:id="@+id/main_button_loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/loading" />
+
+    <Button
+        android:id="@+id/main_button_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/error" />
+
+    <Button
+        android:id="@+id/main_button_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/noNetwork" />
+
+    <Button
+        android:id="@+id/main_button_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/empty" />
+</LinearLayout>
